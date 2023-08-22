@@ -162,26 +162,37 @@ body {
     }
   }
 
+/*****                       *****/
+/*****       Footer          *****/
+/****                         ****/
+
+#footerbox {
+    height:40px;
+    border-top: solid 1px #000;
+    background-color: #fff;
+}
 
 
-  /****                  ****/
-  /****  page "ACCUEIL" ****/
-   /****                  ****/
+/****                  ****/
+/****  page "ACCUEIL" ****/
+/****                  ****/
 
 
- .sliderpicture img {
+.sliderpicture {
+    position : relative;
+}
+
+.sliderpicture img {
     width: 100%;
     height: auto;
-    position : relative;
-    z-index:-1;
- }
+    z-index:-1;  
+}
 
- .sliderpicture h1{
-    /*position: absolute;
-    top: 50%;
+.sliderpicture h1{
+    position: absolute;
+    top: 45%;
     left: 50%;
-    transform: translate(-50%, -50%);*/
-    margin-top:-40%;
+    transform: translate(-50%, -50%);
     font-family: 'Space Mono', monospace;
     font-weight: 700;
     font-size: 5vw;
@@ -192,6 +203,7 @@ body {
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: #fff;
     width:100%;
+  
   
   }
 
