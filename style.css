@@ -1,0 +1,199 @@
+/*
+Theme Name: Photographe-event
+Theme URI: 
+Author: Johan GHYS
+Author URI: 
+Description: Thème pour  Photographe-event
+Version: 1.0
+Tags: photographe
+Text Domain: Photographe-event
+*/
+
+
+body {
+    background-color:#eee;
+}
+
+.sectionblocks {
+    width:1440px;
+    margin:auto; 
+    
+}
+
+@media (max-width: 1440px) {
+    .sectionblocks {
+      width:100%
+    }
+  }
+    
+/*****                        ****/
+/*****  header: logo + menu  *****/
+/****                         ****/
+
+#headerbox {
+    margin-top:-8px;
+    height:80px;
+}
+
+
+.header-container {    
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+    background-color: #fff;
+}
+  
+.logo { 
+    flex: 40%;
+    min-height:80px;
+    display:flex;
+    align-items: center;
+}
+
+.logo img {
+    margin:auto;
+}
+
+/* Header desktop menu */
+  
+.desktop {    
+    flex: 60%;
+    height:80px;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu-main-menu-container {
+    width:100%;
+}
+
+
+.desktop .menu {
+    display:flex;
+    justify-content: right;
+    margin:0px;
+    margin-right:10%;
+    height:80px;
+    align-items: center;
+}
+
+.desktop .menu  li a{
+   color: black;
+   text-decoration: none;
+   font-size: 16px;
+   padding: 0px 12px;
+   font-family: 'Space Mono', monospace;
+   font-weight: 400;
+}
+
+.desktop ul {    
+    list-style-type: none;
+}
+
+
+/* Header mobile menu */
+
+
+#mobilemenu {
+    display:none;
+    margin:auto;
+    margin-top:-16px;
+    width:100%;  
+    position: relative;
+    top: 0px;
+    padding: 35px 0px; 
+    background-color: rgba(255, 255, 255, .75);    
+    z-index:100;   
+}
+
+#mobilemenu ul {    
+    list-style-type: none;
+    display:flex;
+    flex-direction: column;    
+    align-items: center;   
+}
+
+#mobilemenu li {
+    margin:15px 0px;
+}
+
+#mobilemenu .menu li a{
+   color: black;
+   text-decoration: none;
+   font-size: 16px;
+   font-family: 'Space Mono', monospace;
+   font-weight: 400;
+}
+
+#hamburger {
+    width:100%;    
+    text-align: right;
+    margin:auto;
+    margin-top:25px;
+}
+
+.icon {
+    margin-right:15px;
+    color:#000;
+}
+
+.mobile {    
+    flex: 30%;
+    height:80px;
+    display:flex;
+    align-items: center;
+    
+}
+
+/* mobile - desktop responsive */
+
+@media (max-width: 630px) {
+    .desktop {
+      display:none;
+    }
+  }
+
+  @media (min-width: 631px) {
+    .mobile {
+      display:none;
+    }
+  }
+
+
+
+  /****                  ****/
+  /****  page "ACCUEIL" ****/
+   /****                  ****/
+
+
+ .sliderpicture img {
+    width: 100%;
+    height: auto;
+    position : relative;
+    z-index:-1;
+ }
+
+ .sliderpicture h1{
+    /*position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);*/
+    margin-top:-40%;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 5vw;
+    color:#fff;
+    font-style: italic;
+    text-align: center;
+    -webkit-text-fill-color:rgba(0, 0, 0, 0); 
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #fff;
+    width:100%;
+  
+  }
+
+
+
