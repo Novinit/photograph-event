@@ -21,7 +21,7 @@
         </div>
 
         <nav class="desktop">
-            <?php wp_nav_menu(); ?>
+            <?php wp_nav_menu( array('menu' => "Main menu") ); ?>
         </nav>
         
         <nav class="mobile">
@@ -32,7 +32,7 @@
     </div>
     <!-- overlay menu for mobile -->
         <div id="mobilemenu">                
-            <?php wp_nav_menu(); ?>
+        <?php wp_nav_menu( array('menu' => "Main menu") ); ?>
         </div>     
 
 </header>

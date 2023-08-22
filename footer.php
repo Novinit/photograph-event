@@ -1,4 +1,16 @@
 
+
+
+
+<footer id="footerbox" class="sectionblocks">
+ 
+  <nav class="footermenu">
+    <?php wp_nav_menu( array('menu' => "Footer menu") ); ?>
+  <nav>
+
+</footer>
+
+
 <script>
 function myFunction() {
   var x = document.getElementById("mobilemenu");
