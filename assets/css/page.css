@@ -1,24 +1,10 @@
-/*
-Theme Name: Photographe-event
-Theme URI: 
-Author: Johan GHYS
-Author URI: 
-Description: Thème pour  Photographe-event
-Version: 1.0
-Tags: photographe
-Text Domain: Photographe-event
-*/
-
-
-
 body {
-    background-color:#fff;
+    background-color:#eee;
 }
 
 .sectionblocks {
     width:1440px;
     margin:auto; 
-    background-color: #fff;
     
 }
 
@@ -219,7 +205,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom:15px;
 }
 .footermenu {
     height: 40px;  
@@ -305,7 +290,7 @@ body {
 
 /* The Modal (background) */
 .modal {
-   
+    display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 200; /* Sit on top */
     left: 0;
@@ -348,7 +333,6 @@ body {
 /****  Form  in pop-up  ****/
 /****                   ****/
 
-#myModal {display: none;}
 
 .formholder {
     display :flex;
@@ -549,12 +533,13 @@ textarea.wpcf7-form-control.wpcf7-textarea {
     justify-content: center;
     height:auto;
     background-color: #fff;
-    margin-bottom:15px;
-
+    padding-top:45px;
+    margin-top:-5px;
 }
 
 .photo_container {
-    width: 564px; 
+    width: 564px;
+    background-color:red;
     gap:30px;
     height:495px;
     object-fit: cover;
@@ -643,17 +628,16 @@ textarea.wpcf7-form-control.wpcf7-textarea {
 
 /* Modal Content/Box */
 .lightbox-content {
-    margin: 1% auto; /* 15% from the top and centered */
+    margin: 5% auto; /* 15% from the top and centered */
     padding: 20px;
     width: 75%;
     min-width:300px;     
-    animation: fade 1s ease-in-out;  
+    animation: fade 1s ease-in-out;
+    object-fit: cover;  
 }
 
 .lightbox-content img {
     width:100%;
-    object-fit: contain;
-    min-height: 90vh; 
 }
 
 
@@ -694,38 +678,4 @@ textarea.wpcf7-form-control.wpcf7-textarea {
     text-decoration: none;
     cursor: pointer;
 }
-
-/*** filterblock ***/
-
-
-.filter {
-    width:1140px;
-    height: 100px;
-    display:flex;
-    align-items: center;  
-   
-   
-}
-
-.taxonomy {
-    height:43px;
-    width: 260px;
-    border : #B8BBC2 1px solid;
-    border-radius: 5px;
-    padding: 0 10px;
-
-}
-
-.filter_left {
-    width:50%;
-}
-
-.filter_right {
-    width:50%;
-    display: flex;
-    justify-content: right;
-}
-
-
-
 
