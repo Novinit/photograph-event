@@ -11,6 +11,10 @@ Text Domain: Photographe-event
 
 
 
+/*****************/
+/**** General ****/
+/*****************/
+
 body {
     background-color:#fff;
 }
@@ -18,15 +22,14 @@ body {
 .sectionblocks {
     width:1440px;
     margin:auto; 
-    background-color: #fff;
-    
+    background-color: #fff;    
 }
 
 @media (max-width: 1440px) {
     .sectionblocks {
       width:100%;
     }
-  }
+}
 
 .standard-button {
     width: 272px;
@@ -49,14 +52,15 @@ body {
     color:#fff;
 }
     
-/*****                        ****/
+
+
+/*********************************/
 /*****  header: logo + menu  *****/
-/****                         ****/
+/*********************************/
 
 #headerbox {
     height:80px;
 }
-
 
 .header-container {    
     width: auto;
@@ -114,7 +118,6 @@ body {
     list-style-type: none;
 }
 
-
 /* Header mobile menu */
 
 @keyframes fade {
@@ -134,7 +137,6 @@ body {
       transform: translateYS(0%);
     }
 }
-
 
 #mobilemenu {
     display:none;
@@ -167,7 +169,6 @@ body {
    font-family: 'Space Mono', monospace;
    font-weight: 400;
    animation: fade 3s ease-in-out;
-  
 }
 
 #hamburger {
@@ -195,21 +196,24 @@ body {
     .desktop {
       display:none;
     }
-  }
+}
 
   @media (min-width: 641px) {
     .mobile {
       display:none;
     }
-  }
+}
 
-/*****                       *****/
+
+
+
+
+/*********************************/
 /*****       Footer          *****/
-/****                         ****/
+/*********************************/
 
 .menu-footer-menu-container {
     width:100%;  
-
 }
 
 #footerbox{
@@ -235,7 +239,6 @@ body {
     align-items: center;
 }
 
-
 .footermenu .menu  li a{
     color: black;
     text-decoration: none;
@@ -249,7 +252,6 @@ body {
  .footermenu ul {    
      list-style-type: none;
 }
-
 
 @media (max-width: 660px) {
     .footermenu .menu {
@@ -265,10 +267,11 @@ body {
   }
 
 
-/****                  ****/
-/****  page "ACCUEIL" ****/
-/****                  ****/
 
+
+/*************************/
+/****  page "ACCUEIL" ****/
+/*************************/
 
 .sliderpicture {
     position : relative;
@@ -294,40 +297,34 @@ body {
     -webkit-text-fill-color:rgba(0, 0, 0, 0); 
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: #fff;
-    width:100%;
-  
-  
+    width:100%;  
 }
 
-/****                    ****/
+/****************************/
 /****  Contact Pop-up    ****/
-/****                    ****/
+/****************************/
 
-/* The Modal (background) */
 .modal {
-   
-    position: fixed; /* Stay in place */
-    z-index: 200; /* Sit on top */
+    position: fixed; 
+    z-index: 200; 
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.822); /* Black w/ opacity */
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0, 0, 0, 0.822); 
 }
 
-/* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
-    margin: 5% auto; /* 15% from the top and centered */
+    margin: 5% auto; 
     width: 30%;
     min-width:300px; 
     border: 5px solid #000;
     animation: fade 1s ease-in-out;  
 }
 
-/* The Close Button */
 .close {
     color: #aaa;
     float: right;
@@ -342,7 +339,6 @@ body {
     cursor: pointer;
 }
 
-
 .modal-header {
     width:100%;
     min-height:107px;
@@ -350,10 +346,8 @@ body {
     margin-bottom:30px;
     background-image: url("../../assets/images/contact-header.png");;
     background-repeat: no-repeat;
-    background-size: auto;
-    
+    background-size: auto;    
 }
-
 
 .close_popup {
     position: fixed;
@@ -362,12 +356,13 @@ body {
     cursor: pointer;
     color:#aaa;
     font-size:75px;
-  }
+ }
 
 
-/****                   ****/
+
+/***************************/
 /****  Form  in pop-up  ****/
-/****                   ****/
+/***************************/
 
 #myModal {display: none;}
 
@@ -400,7 +395,6 @@ body {
     height: 50px;   
     text-align:center;
     background-color: #D8D8D8;
-    
 }
 
 .sendbutton input:hover {
@@ -424,9 +418,10 @@ textarea.wpcf7-form-control.wpcf7-textarea {
 
 
 
-/****                              ****/
+
+/***************************************/
 /****  Photo page single-photo.php  ****/
-/****                              ****/
+/***************************************/
 
 .photo_presentation,
 .contact_navigation {
@@ -550,9 +545,9 @@ textarea.wpcf7-form-control.wpcf7-textarea {
 
 
 
-/****                   ****/
+/***************************/
 /****   Archive         ****/
-/****                  ****/
+/***************************/
 
 .archive {
     display:flex;
@@ -577,7 +572,6 @@ textarea.wpcf7-form-control.wpcf7-textarea {
     height:495px;
 }
 
-
 @media only screen and (max-width: 570px) {
     .photo_container {
         width: 100%;
@@ -594,7 +588,6 @@ textarea.wpcf7-form-control.wpcf7-textarea {
 }
 
 .overlay {
-
    width:100%;
    position: absolute;
    top: 0;
@@ -609,11 +602,9 @@ textarea.wpcf7-form-control.wpcf7-textarea {
    z-index:10;
 }
 
-
 .photo_container:hover .overlay {
    opacity: 0.5;
 }
-
 
 .title {   
     position: absolute;
@@ -643,7 +634,6 @@ textarea.wpcf7-form-control.wpcf7-textarea {
     height:auto;
 }
 
-
 .overlay_tekst {
     font-family: Space Mono;
     font-size: 14px;
@@ -653,24 +643,21 @@ textarea.wpcf7-form-control.wpcf7-textarea {
     color:#fff;  
 }
 
-
-
 .lightboxmodal{
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 200!important; /* Sit on top */
+    display: none; 
+    position: fixed; 
+    z-index: 200!important; 
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.95); /* Black w/ opacity */
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0, 0, 0, 0.95); 
 }
 
-/* Modal Content/Box */
 .lightbox-content {
-    margin: 1% auto; /* 15% from the top and centered */
+    margin: 1% auto; 
     padding: 20px;
     width: 75%;
     min-width:300px;     
@@ -685,7 +672,6 @@ textarea.wpcf7-form-control.wpcf7-textarea {
     z-index:750!important;
 }
 
-
 .next {
     position: absolute;
     top:50%;
@@ -694,7 +680,6 @@ textarea.wpcf7-form-control.wpcf7-textarea {
     cursor: pointer;
     font-size:75px;
     padding-right:25px;
-
 }
 
 .prev {
@@ -727,14 +712,7 @@ textarea.wpcf7-form-control.wpcf7-textarea {
 }
 
 
-
-
-
-
-
-
-
-/* The Close Button */
+/**** The Close Button ****/
 .close2 {
     color: #aaa;
     float: right;
@@ -749,8 +727,7 @@ textarea.wpcf7-form-control.wpcf7-textarea {
     cursor: pointer;
 }
 
-/*** filterblock ***/
-
+/**** filterblock ****/
 
 .filter {   
     height: 100px;
@@ -768,8 +745,7 @@ textarea.wpcf7-form-control.wpcf7-textarea {
     #select_format,
     #select_date {
         width:100%;
-    }
-    
+    }    
 }
 
 .taxonomy {
@@ -780,11 +756,7 @@ textarea.wpcf7-form-control.wpcf7-textarea {
     padding: 0 10px;
     margin: bottom 5px;
     margin-top:5px
-
 }
-
-
-
 .filter_left {
     width:50%;
 }
@@ -792,13 +764,8 @@ textarea.wpcf7-form-control.wpcf7-textarea {
 .filter_right {
     width:50%;
     display: flex;
-    justify-content: right;  
-
+    justify-content: right;
 }
-
-
-
-
 
 @media only screen and (min-width: 1001px) {
     .bottom {
@@ -806,51 +773,50 @@ textarea.wpcf7-form-control.wpcf7-textarea {
         bottom: 0; 
         width: 100%; 
         }
+}
+    
+    
+@media only screen and (max-width: 1000px) {
+    .photo_pres {
+        display :flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
     }
     
-    
-    @media only screen and (max-width: 1000px) {
-        .photo_pres {
-            display :flex;
-            flex-direction: column-reverse;
-            justify-content: center;
-            text-align: center;
-            
-            }
-        .photo {
-            width:100%;     
-        }
-    
-        .photo_description h2 {
-            font-size:7vw;
-        }
-    
-        .post_navigation {
-            display:none;
-        }
-        .contact {
-            display:flex;
-            flex-direction: column;
-            width:100%;
-            justify-content: center;
-        }
-              
-    
-        .question {
-            width:100%;
-            text-align: center;
-        }
+    .photo {
+        width:100%;     
+    }
 
-        .other {
-            display:flex;
-            flex-direction: column;
-            justify-content: center;            
-        }
-        
-        .other_holder{
-            width:100%;
-        }
-    }   
+    .photo_description h2 {
+        font-size:7vw;
+    }
+    
+    .post_navigation {
+        display:none;
+    }
+    .contact {
+        display:flex;
+        flex-direction: column;
+        width:100%;
+        justify-content: center;
+    }        
+
+    .question {
+        width:100%;
+        text-align: center;
+    }
+
+    .other {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;            
+    }
+    
+    .other_holder{
+        width:100%;
+    }
+}   
 
 
  
